@@ -20,3 +20,7 @@ g++ phase-1/main.cpp -o mos
 ---
 
 Built as part of the Operating Systems course to understand how an OS evolves from a simple execution model into a multiprogramming system.
+
+## Academic Integrity
+
+This repository is intended for learning and reference purposes. If you use this code for coursework, ensure that you understand the implementation and follow your institution's academic integrity policies.
