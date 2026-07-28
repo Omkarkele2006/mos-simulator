@@ -2,6 +2,10 @@
 
 A C++ implementation of a Multiprogramming Operating System (MOS), built incrementally across three phases to simulate core operating system concepts such as instruction execution, memory management, paging, interrupts, and multiprogramming.
 
+## Documentation
+
+- Phase 1: [`docs/phase-1.md`](docs/phase-1.md)
+
 ## Project Progress
 
 - [x] Phase 1 – Basic MOS
