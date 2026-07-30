@@ -35,14 +35,47 @@ ifstream fin;
 ofstream fout;
 
 /**
- * Initializes the operating system state for a new job
+ * Initializes the operating system state for a new job.
  */
-void INIT() {}
+void INIT()
+{
+    // Clear main memory
+    for (int i = 0; i < 100; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            M[i][j] = '*';
+        }
+    }
+
+    // Clear CPU registers
+    for (int i = 0; i < 4; i++)
+    {
+        R[i] = '*';
+        IR[i] = '*';
+    }
+
+    // Reset CPU state
+    IC = 0;
+    C = 0;
+    SI = 0;
+
+    // Reset pointer
+    m = 0;
+}
 
 /**
- * Starts execution of the loaded user program
+ * Executes the loaded user program instruction by instruction.
  */
-void STARTEXECUTION() {}
+void EXECUTEUSERPROGRAM() {}
+
+/**
+ * Starts execution of the loaded user program.
+ */
+void STARTEXECUTION() {
+    IC = 0;
+    EXECUTEUSERPROGRAM();
+}
 
 /**
  * Loads the input job into memory

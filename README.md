@@ -21,9 +21,15 @@ g++ phase-1/main.cpp -o mos
 
 > Update the build command according to the phase you are running.
 
+## Code Style
+
+The code is intentionally written with clear variable names and concise comments to make the implementation easy to follow while learning how a multiprogramming operating system works.
+
 ---
 
 Built as part of the Operating Systems course to understand how an OS evolves from a simple execution model into a multiprogramming system.
+
+I would like to express my sincere gratitude to my OS professor, **Saraswati Patil Ma'am**, for her teaching, guidance, content, and support throughout this project.
 
 ## Academic Integrity
 
