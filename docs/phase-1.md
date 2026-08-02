@@ -14,7 +14,14 @@
    - `C` (1 byte) – Toggle register/condition flag
 4. Main memory consists of **100 words**, where each word stores **4 characters**. Memory is organized into **10 blocks**, with each block containing **10 words**.
 5. The card reader reads one card (**10 words**) at a time, while the line printer prints one block (**10 words**) at a time.
-6. `$AMJ` follows the format:
+6. Each program card stores a maximum of **40 characters (10 words)**. Programs longer than 40 characters continue on the next program card (next memory block).
+
+   Example ([`phase-1/input.txt`](phase-1/input.txt)):
+
+   ```text
+   GD30GD40LR30NR40SR50LR30OR40SR60LR30XR40  ← 40 characters
+   SR70PD50PD60PD70H                         ← Remaining instructions of same job
+7. `$AMJ` follows the format:
 
    ```text
    $AMJJJJJTTTTLLLL
@@ -25,7 +32,7 @@
    - `JJJJ` – 4-digit Job ID (Starting from 0001)
    - `TTTT` – Total Time Limit (maximum number of instructions allowed to execute)
    - `LLLL` – Total Line Limit (maximum number of output lines that can be printed)
-7. `$END` follows the format:
+8. `$END` follows the format:
 
    ```text
    $ENDJJJJ
