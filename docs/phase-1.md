@@ -43,4 +43,6 @@
 6. Each instruction occupies exactly one memory word (4 characters).
 7. Supported instructions:
    - Supervisor instructions: `GD`, `PD`, `H`
-   - User instructions: `LR`, `SR`, `CR`, `BT`
+   - User instructions: `LR`, `SR`, `CR`, `BT`, `NOT`, `OR`, `XOR`
+8. Instructions are decoded using only the first character `IR[0]`, while
+   control cards are identified using the second character after `$` (`buffer[1]`).    

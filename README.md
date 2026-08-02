@@ -1,36 +1,30 @@
 # Multiprogramming OS Simulator
 
-A C++ implementation of a Multiprogramming Operating System (MOS), built incrementally across three phases to simulate core operating system concepts such as instruction execution, memory management, paging, interrupts, and multiprogramming.
+A C++ project I'm building to understand how a multiprogramming operating system works - starting from basic instruction execution and eventually adding paging, interrupts, and I/O spooling. Built incrementally across three phases as part of my Operating Systems coursework.
 
 ## Documentation
+- Phase 1: [docs/phase-1.md](docs/phase-1.md)
 
-- Phase 1: [`docs/phase-1.md`](docs/phase-1.md)
-
-## Project Progress
-
+## Progress
 - [x] Phase 1 – Basic MOS
 - [ ] Phase 2 – Paging & Interrupt Handling
 - [ ] Phase 3 – Multiprogramming & I/O Spooling
 
-## Build
-
+## Build & Run
 ```bash
-g++ phase-1/main.cpp -o mos
+g++ phase-1/phase1.cpp -o mos
 ./mos
 ```
+(Swap the path for whichever phase you're testing.)
 
-> Update the build command according to the phase you are running.
+## About the Code
+Nothing fancy here - just clear variable names and comments so it's easy to follow along, since the main goal is learning, not writing production-grade code.
 
-## Code Style
+## Acknowledgements
+Thanks to my OS professor, Saraswati Patil Ma'am, for the guidance and teaching that made this project possible.
 
-The code is intentionally written with clear variable names and concise comments to make the implementation easy to follow while learning how a multiprogramming operating system works.
-
----
-
-Built as part of the Operating Systems course to understand how an OS evolves from a simple execution model into a multiprogramming system.
-
-I would like to express my sincere gratitude to my OS professor, **Saraswati Patil Ma'am**, for her teaching, guidance, content, and support throughout this project.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Academic Integrity
-
-This repository is intended for learning and reference purposes. If you use this code for coursework, ensure that you understand the implementation and follow your institution's academic integrity policies.
+Feel free to use this as a reference, but if you're using it for your own coursework, make sure you actually understand what it's doing and follow your institution's academic integrity rules.
