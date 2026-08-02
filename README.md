@@ -2,6 +2,12 @@
 
 A C++ project I'm building to understand how a multiprogramming operating system works - starting from basic instruction execution and eventually adding paging, interrupts, and I/O spooling. Built incrementally across three phases as part of my Operating Systems coursework.
 
+## Interactive Simulator
+
+Try the visual MOS simulator here: https://mos-by-omkarkele.lovable.app
+
+The frontend was generated using Lovable and is being refined alongside the C++ implementation. If you have suggestions, ideas, or find any issues, feel free to reach out at theomkarkele@gmail.com.
+
 ## Documentation
 - Phase 1: [docs/phase-1.md](docs/phase-1.md)
 
