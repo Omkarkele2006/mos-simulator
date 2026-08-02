@@ -85,6 +85,10 @@ void INIT()
     // Reset pointer
     m = 0;
 
+    // Reset execution statistics
+    TTL = 0;
+    TLL = 0;
+
     cout << "\nMemory after initialization:\n";
     PRINT_MEMORY();
 }
