@@ -10,15 +10,26 @@ The frontend was generated using Lovable and is being refined alongside the C++ 
 
 ## Documentation
 - Phase 1: [docs/phase-1.md](docs/phase-1.md)
+- Phase 2: [docs/phase-2.md](docs/phase-2.md) *(Work in Progress)*
 
 ## Progress
 - [x] Phase 1 – Basic MOS
-- [ ] Phase 2 – Paging & Interrupt Handling
+- [🚧] Phase 2 – Paging & Interrupt Handling *(In Progress)*
 - [ ] Phase 3 – Multiprogramming & I/O Spooling
 
 ## Build & Run
+
+Phase 1
+
 ```bash
 g++ phase-1/phase1.cpp -o mos
+./mos
+```
+
+Phase 2
+
+```bash
+g++ phase-2/phase2.cpp -o mos
 ./mos
 ```
 (Swap the path for whichever phase you're testing.)
