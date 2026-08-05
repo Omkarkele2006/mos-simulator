@@ -21,6 +21,10 @@ Phase 2 extends the Phase 1 MOS by introducing paging, address translation, inte
 4. One program card occupies at most **one page (40 characters / 10 words)**. Longer programs continue on the next program card.
 5. One job is loaded and executed at a time (Uniprogramming).
 
+> **Why is physical memory larger than virtual memory?**
+>
+> This project uses a fixed 4-character instruction format, where the first two characters represent the opcode and the remaining two represent the operand (memory address). Since only two digits are available for addresses, programs can reference virtual addresses `00–99` only. To demonstrate paging and address translation, the simulator provides a larger physical memory of **300 words**.
+
 ## Job Cards
 
 ### `$AMJ`
@@ -67,7 +71,7 @@ Along with the registers introduced in Phase 1, Phase 2 adds:
 
 ## Interrupts
 
-### Supervisor Interrupt (SI)
+### Supervisor/Service Interrupt (SI)
 
 - `1` – GD
 - `2` – PD
